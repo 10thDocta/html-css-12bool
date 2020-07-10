@@ -4,8 +4,39 @@
   padding: 0;
 }
 
+div[class*="col-"] {
+  height: 300px;
+  background-color: pink;
+  border: 1px solid black;
+  position: relative;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NESTED */
+.clearfix div {
+  background-color: red;
 }
