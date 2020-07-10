@@ -38,5 +38,6 @@ span {
 
 /* NESTED */
 .clearfix div {
-  background-color: red;
+  background-color: lightblue;
+  border: 1px solid white;
 }
